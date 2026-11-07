@@ -14,18 +14,47 @@
 
 
     <style name="Theme.MAME4droid" parent="android:Theme.Material.NoActionBar.Fullscreen">
-        <!--  <item name="android:windowBackground">@null</item>-->
-         <!--  
-        <item name="android:windowEnterAnimation">@null</item>
-        <item name="android:windowExitAnimation">@null</item>
-        <item name="android:windowAnimationStyle">@null</item>
-      -->
+        <item name="android:colorPrimary">@color/premium_primary</item>
+        <item name="android:colorAccent">@color/premium_accent</item>
+        <item name="android:textColorPrimary">@color/premium_text</item>
+        <item name="android:textColorSecondary">@color/premium_text_dim</item>
+        <item name="android:alertDialogTheme">@style/Theme.MAME4droid.Dialog</item>
+        <item name="android:dialogTheme">@style/Theme.MAME4droid.Dialog</item>
     </style>
-    
+
+    <style name="Theme.MAME4droid.Dialog" parent="android:Theme.Material.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/premium_dialog_bg</item>
+        <item name="android:colorAccent">@color/premium_accent</item>
+        <item name="android:textColorPrimary">@color/premium_text</item>
+        <item name="android:textColorSecondary">@color/premium_text_dim</item>
+    </style>
+
+    <style name="Theme.MAME4droid.DialogActivity" parent="android:Theme.Material.Dialog">
+        <item name="android:windowBackground">@drawable/premium_dialog_bg</item>
+        <item name="android:colorAccent">@color/premium_accent</item>
+        <item name="android:textColorPrimary">@color/premium_text</item>
+        <item name="android:textColorSecondary">@color/premium_text_dim</item>
+    </style>
+
+    <style name="PremiumWindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/premium_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/premium_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/premium_pop_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/premium_pop_exit</item>
+    </style>
+
     <style name="Theme.MAME4droid.TitleBar" parent="android:Theme.Material.NoActionBar.Fullscreen">
-     
+
         <item name="android:windowNoTitle">false</item>
-         
+        <item name="android:windowBackground">@color/premium_bg</item>
+        <item name="android:colorPrimary">@color/premium_primary</item>
+        <item name="android:colorPrimaryDark">@color/premium_primary_dark</item>
+        <item name="android:colorAccent">@color/premium_accent</item>
+        <item name="android:textColorPrimary">@color/premium_text</item>
+        <item name="android:textColorSecondary">@color/premium_text_dim</item>
+        <item name="android:navigationBarColor">@color/premium_bg</item>
+        <item name="android:windowAnimationStyle">@style/PremiumWindowAnimation</item>
+
     </style>
     
 </resources>
