@@ -24,4 +24,15 @@
  <color name="navy">#000080</color>
  <color name="black">#000000</color>
   
+
+ <!-- Premium UI palette -->
+ <color name="premium_bg">#0B0F1A</color>
+ <color name="premium_surface">#141A2B</color>
+ <color name="premium_primary">#6C5CE7</color>
+ <color name="premium_primary_dark">#0B0F1A</color>
+ <color name="premium_accent">#00D1FF</color>
+ <color name="premium_text">#F2F4FA</color>
+ <color name="premium_text_dim">#A7AEC4</color>
+ <color name="premium_stroke">#2A3150</color>
+
 </resources>
