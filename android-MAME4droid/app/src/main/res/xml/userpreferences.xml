@@ -876,7 +876,7 @@
 
 		<com.seleuco.mame4droid.prefs.CheckBoxPrefWithWarn android:key="PREF_GLOBAL_USE_NOTCH"
 			android:title="@string/pref_use_notch_title" android:summary="@string/pref_use_notch_summary"
-			android:defaultValue="false" />
+			android:defaultValue="true" />
 
 		<com.seleuco.mame4droid.prefs.CheckBoxPrefWithWarn android:key="PREF_GLOBAL_SIMPLE_UI"
 			android:title="@string/pref_simple_ui_title" android:summary="@string/pref_simple_ui_summary"
@@ -966,7 +966,7 @@
 
 		<CheckBoxPreference android:key="PREF_PORTRAIT_FULLSCREEN"
 			android:title="@string/pref_fullscreen_portrait_title" android:summary="@string/pref_fullscreen_portrait_summary"
-			android:defaultValue="false"
+			android:defaultValue="true"
 			android:dependency="PREF_PORTRAIT_TOUCH_CONTROLLER"
 			/>
 
